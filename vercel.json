@@ -3,10 +3,10 @@
   "name": "esma-mini-note-app",
   "builds": [
     { "src": "*.html", "use": "@vercel/static" },
-    { "src": "assets/css/*.css", "use": "@vercel/static" },
-    { "src": "assets/js/*.js", "use": "@vercel/static" }
+    { "src": "assets/**/*", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/", "dest": "/connexion.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
