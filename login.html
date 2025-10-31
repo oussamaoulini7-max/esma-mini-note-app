@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div data-include="./components/header.html"></div>
+
+    <form action="#">
+        <div class="form-group">
+            <label for="Email">Identification</label>
+            <input type="text" id="Email" placeholder="Veuillez entrer votre adresse e-mail.." required>
+        </div>
+        <div class="form-group">
+            <label for="Password">Mot De Passe</label>
+            <input type="password" id="Password" placeholder="Veuillez entrer votre adresse mot de passe.." required>
+        </div>
+        <input type="submit" id="LoginBtn" value="Valider">
+    </form>
+
+    <div data-include="components/footer.html"></div>
+
+
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
