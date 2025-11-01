@@ -1,13 +1,12 @@
 /* login js start */
 
-const LoginBtn = document.getElementById("LoginBtn");
-if (LoginBtn) {
-    LoginBtn.addEventListener("click", function (e) {
-        e.preventDefault();
+const loginform = document.getElementById("Loginform");
 
+if (loginform) {
+    loginform.addEventListener("submit", function (e) {
+        e.preventDefault(); 
         window.location.href = "notes.html";
-
-    })
+    });
 }
 
 /* login js end */
