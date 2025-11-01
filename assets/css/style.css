@@ -201,3 +201,138 @@ input[type="submit"]:hover {
     margin: 4px 0;
     font-size: 14px;
 }
+
+
+@media (max-width: 1024px) {
+    form, .conatiner {
+        width: 90%;
+        margin: 6% auto;
+        padding: 20px;
+    }
+
+    .form-group {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="password"] {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer {
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form, .conatiner {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px 15px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="password"] {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    input[type="submit"],
+    #CancelBtn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand {
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .footer-content {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    form, .conatiner {
+        width: 100%;
+        margin: 15% auto;
+        padding: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="password"],
+    input[type="submit"] {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .navbar-container {
+        gap: 8px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+}
