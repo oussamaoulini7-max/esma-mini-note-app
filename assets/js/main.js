@@ -61,7 +61,7 @@ window.addEventListener("load", function () {
     const infoTxt = document.getElementById("informTxt");
 
     const nameToShow = studentNAME || "AHMEDI MOUNIR";
-    const gradeToShow = FinalGRADE ? parseFloat(FinalGRADE) : 8.00;
+    const gradeToShow = parseFloat(FinalGRADE) || 8.00;
 
     title.textContent = "Bienvenue " + nameToShow;
     grade.textContent = gradeToShow.toFixed(2);
