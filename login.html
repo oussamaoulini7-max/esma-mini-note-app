@@ -12,14 +12,14 @@
 
     <div data-include="assets/components/header.html"></div>
 
-    <form id="Loginform">
+    <form id="Loginform" action="./api/login.php" method="post">
         <div class="form-group">
             <label for="Email">Identification</label>
-            <input type="email" id="Email" placeholder="Veuillez entrer votre adresse e-mail.." required>
+            <input type="email" name="email" id="Email" placeholder="Veuillez entrer votre adresse e-mail.." required>
         </div>
         <div class="form-group">
             <label for="Password">Mot De Passe</label>
-            <input type="password" id="Password" placeholder="Veuillez entrer votre adresse mot de passe.." required>
+            <input type="password" name="email" id="Password" placeholder="Veuillez entrer votre adresse mot de passe.." required>
         </div>
         <input type="submit" id="LoginBtn" value="Valider">
     </form>

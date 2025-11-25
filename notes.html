@@ -12,18 +12,18 @@
 
     <div data-include="assets/components/header.html"></div>
 
-    <form>
+    <form action="./api/notes.php" method="post">
         <div class="form-group">
             <label for="StudentName">Etudiant</label>
-            <input type="text" id="StudentName"  placeholder="Veuillez entrer étudiant nom et prénom..">
+            <input type="text" name="student" id="StudentName"  placeholder="Veuillez entrer étudiant nom et prénom..">
         </div>
         <div class="form-group">
             <label for="MathGrade">Maths</label>
-            <input type="number" id="MathGrade"  placeholder="Veuillez entrer étudiant note..">
+            <input type="number" name="math" id="MathGrade"  placeholder="Veuillez entrer étudiant note..">
         </div>
         <div class="form-group">
             <label for="CSGrade">Informatique</label>
-            <input type="number" id="CSGrade" placeholder="Veuillez entrer étudiant note..">
+            <input type="number" name="cs" id="CSGrade" placeholder="Veuillez entrer étudiant note..">
         </div>
         <input type="submit" id="resultBtn" value="Résultat">
         <input type="submit" id="CancelBtn" value="Annuler">
