@@ -1,12 +1,12 @@
 {
-  "version": 2,
-  "name": "esma-mini-note-app",
-  "builds": [
-    { "src": "*.html", "use": "@vercel/static" },
-    { "src": "assets/**/*", "use": "@vercel/static" }
-  ],
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.4"
+    }
+  },
   "routes": [
     { "src": "/", "dest": "/login.html" },
+    { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
